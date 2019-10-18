@@ -27,6 +27,6 @@
         <a href="<%= links_user_path(@user) %>" class="nav-link <%= 'active' if current_page?(links_user_path(@user)) %>">Favoites <span class="badge badge-secondary"><%= @count_favorties %></span></a>
       </li>
     </ul>
-    <%= render 'microposts/microposts', microposts: @microposts %>
+    <%= render 'microposts/microposts', microposts: @favorites %>
   </div>
 </div>
