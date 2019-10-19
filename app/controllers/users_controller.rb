@@ -40,7 +40,7 @@ class UsersController < ApplicationController
     counts(@user)
   end
 
-  def links
+  def linkes
     @user=User.find(params[:id])    
     @favorites=@user.favorite_microposts.page(params[:page])  
     counts(@user)
